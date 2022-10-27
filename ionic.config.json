@@ -1,0 +1,7 @@
+{
+  "name": "school-social-media",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
