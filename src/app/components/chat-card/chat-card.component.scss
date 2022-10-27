@@ -1,0 +1,22 @@
+p {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  gap: 0.25rem;
+
+  align-items: center;
+  padding: 1rem;
+  background: var(--ion-color-light);
+}
+
+.avatar {
+  height: 75px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}

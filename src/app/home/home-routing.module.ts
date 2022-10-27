@@ -6,11 +6,15 @@ const routes: Routes = [
   {
     path: '',
     component: HomePage,
-  }
+  },
+  // {
+  //   path: 'messages',
+  //   redirectTo: '../messages',
+  // },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
 export class HomePageRoutingModule {}
