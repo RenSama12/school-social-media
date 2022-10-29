@@ -1,0 +1,39 @@
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-label class="set">Setting</ion-label>
+    <ion-buttons class="back" (click)="navigate('/home')">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+    </ion-buttons>
+    
+  </ion-toolbar>
+</ion-header>
+<ion-list class="container">
+  <ion-item>
+  <ion-label>Change Username and Password</ion-label>
+  <ion-button id="click-trigger" >Change</ion-button>
+
+  <ion-popover trigger="click-trigger" triggerAction="click">
+    <ng-template>
+          <ion-item>
+            <ion-label position="stacked">Change Username:</ion-label>
+            <ion-input placeholder="Input Here"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="stacked">Change Password:</ion-label>
+            <ion-input type="password" placeholder="Input Here"></ion-input>
+          </ion-item>
+  
+           <ion-button>Confirm</ion-button>
+           <ion-button>Cancel</ion-button> 
+    </ng-template>
+  </ion-popover>
+  
+</ion-item>
+
+
+<ion-item>
+    <ion-label> Dark Theme</ion-label>
+    <ion-toggle slot="end" (ionChange)='toggleTheme($event)'></ion-toggle>
+</ion-item>
+  </ion-list>
